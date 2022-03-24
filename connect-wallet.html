@@ -19,8 +19,9 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark ora-nav">
         <div class="container-fluid mx-5 px-3">
-            <a class="navbar-brand" href="#">eDexSwap</a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" width="70px" alt=""></a>
+            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+            <div class="d-none d-lg-block float-end" id="navbarTogglerDemo02">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -32,14 +33,8 @@
                             <li><a class="dropdown-item" href="#">Action 2</a></li>
                         </ul>
                     </li>
-                </ul>
-            </div>
-            <a class="nav-link ora-deco-btn mx-4" href="#">Connect Wallet</a>
-            <div class="">
-                <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle px-3 ora-plain-btn" href="#" id="navbarDropdown2"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle mx-5 px-5 ora-plain-btn" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             English
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
@@ -47,9 +42,42 @@
                             <li><a class="dropdown-item" href="#">Portuguese</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link ora-deco-btn text-dark px-4" href="#">Connect Wallet</a>
+                    </li>
                 </ul>
             </div>
-            <!-- <a class="nav-link ora-plain-btn" aria-current="page" href="#">English</a> -->
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #16122B;">
+                <div class="offcanvas-body mx-5">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown pb-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Explore
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item pb-2 text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item pb-2 text-white" href="#">Action 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown pb-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item pb-2 text-white" href="#">French</a></li>
+                                <li><a class="dropdown-item pb-2 text-white" href="#">Portuguese</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" style="bottom: 30px; position: fixed;">
+                            <a class="nav-link ora-deco-btn text-dark px-4" href="#">Connect Wallet</a>
+                        </li>
+                    </ul>
+                  <!-- <h5 id="offcanvasRightLabel"></h5> -->
+                  <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                </div>
+                
+              </div>
         </div>
     </nav>
 
@@ -59,41 +87,41 @@
             <h5>Select a wallet</h5>
             <div class="d-flex">
                 <a href="#" class="ora-wallet">
-                    <div class="py-2 px-4">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
+                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
                             alt=""></div>
                 </a>
                 <a href="#" class="ora-wallet">
-                    <div class="py-2 px-4">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
-                            alt=""></div>
-                </a>
-            </div>
-            <div class="d-flex">
-                <a href="#" class="ora-wallet">
-                    <div class="py-2 px-4">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
-                            alt=""></div>
-                </a>
-                <a href="#" class="ora-wallet">
-                    <div class="py-2 px-4">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
+                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
                             alt=""></div>
                 </a>
             </div>
             <div class="d-flex">
                 <a href="#" class="ora-wallet">
-                    <div class="py-2 px-4">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
+                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
                             alt=""></div>
                 </a>
                 <a href="#" class="ora-wallet">
-                    <div class="py-2 px-4">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
+                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
                             alt=""></div>
                 </a>
             </div>
             <div class="d-flex">
                 <a href="#" class="ora-wallet">
-                    <div class="py-2 px-4">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
+                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
                             alt=""></div>
                 </a>
                 <a href="#" class="ora-wallet">
-                    <div class="py-2 px-4">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
+                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
+                            alt=""></div>
+                </a>
+            </div>
+            <div class="d-flex">
+                <a href="#" class="ora-wallet">
+                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
+                            alt=""></div>
+                </a>
+                <a href="#" class="ora-wallet">
+                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px"
                             alt=""></div>
                 </a>
             </div>
@@ -103,25 +131,31 @@
         </div>
     </section>
 
-    <!-- footer -->
-    <div class="whitespace">
-        <hr>
+     <!-- footer -->
+  <div class="whitespace">
+    <hr>
 
-        <div class="container footer">
-            <div class="row">
-                <div class="col-md-4">
+    <div class="container-fluid footer">
+        <div class="row mx-4">
+            <div class="col-6 col-sm-4 ">
+                <img src="./assets/images/logo.png" class="pb-3" width="70px" alt="">
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
-                </div>
-                <div class="col-md-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
-                </div>
-                <div class="col-md-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
-                </div>
+
+                </p>
+            </div>
+            <div class="col-6 col-sm-4">
+                <h5>About Us</h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
+            </div>
+            <div class="col-6 col-sm-4">
+                <h5>Projects</h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
             </div>
         </div>
     </div>
+  </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
