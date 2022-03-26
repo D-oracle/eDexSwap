@@ -105,10 +105,54 @@
                 <!-- <h4 class="justify-content-start float-start">Exchange</h4> -->
                 </ul>
                 <a href="#" class="justify-content-right pt-2" data-bs-toggle="dropdown" aria-expanded="false" style="color: #F9B933;"><i class="bi bi-gear"></i></a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    
-                </ul>
-                <div class="">
+                <div class="dropdown-menu dropdown-menu-end" style="width: 270px; font-size: 12px; background-color: #16122B; color: whitesmoke; border: 1px solid whitesmoke; border-radius: 10px;">
+                    <div class="mx-2 my-1" style="border-radius: 10px; border: 1px solid lightgrey;">
+                        <div class="p-2" style="font-size: 10px;">Transaction Settings</div>                    
+                        <div class="row g-3 mx-2">
+                            <div class="col-9">
+                                <label for="">Slippage tolerance</label>
+                                <input class="ora-input p-1 m-1 w-100" style="background-color: #0C091F;" type="text" placeholder="0.50">
+                            </div>
+                            <div class="col-3">
+                                <label for=""></label>
+                                <button class="btn btn-sm text-white" style="background-color: #2508b8; border-radius: 20px;">Auto</button>                        
+                            </div>
+                        </div>
+                        <div class="row g-3 mx-2">
+                            <label for="">Transaction deadline</label>
+                            <input class="ora-input p-1 m-1 w-50" style="background-color: #0C091F;" type="text" placeholder="30"> minutes
+                        </div>
+                    </div>
+                    <div class="mx-2 my-1" style="border: 1px solid lightgrey; border-radius: 10px;">
+                        <div class="p-2" style="font-size: 10px;">Interface Settings</div>  
+                        <div class="d-block p-2">
+                            <div class="">
+                                Toggle expert mode
+                                <label class="switch" style="right: 20px; position: absolute;">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>                                
+                        </div>
+                        <div class="d-block p-2">
+                            <div class="">
+                                Disable multihops
+                                <label class="switch" style="right: 20px; position: absolute;">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>                                
+                        </div>
+                        <div class="d-block p-2 pb-3">
+                            <div class="">
+                                OpenMEV Gas Refunder
+                                <label class="switch" style="right: 20px; position: absolute;">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>                                
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -350,22 +394,22 @@
                             <li class="list-group-item py-2" style="background-color: inherit;"><a class="link" href=""><img
                                         style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
                                         alt="">SUSHI</a></li>
-                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a class="link" href=""><img
                                         style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
                                         alt="">SUSHI</a></li>
-                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a class="link" href=""><img
                                         style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
                                         alt="">SUSHI</a></li>
-                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a class="link" href=""><img
                                         style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
                                         alt="">SUSHI</a></li>
-                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a class="link" href=""><img
                                         style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
                                         alt="">SUSHI</a></li>
-                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a class="link" href=""><img
                                         style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
                                         alt="">SUSHI</a></li>
-                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a class="link" href=""><img
                                         style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
                                         alt="">SUSHI</a></li>
                         </ul>
@@ -409,8 +453,7 @@
                                         <input type="checkbox" checked>
                                         <span class="slider round"></span>
                                     </label>
-                                </div>
-                                
+                                </div>                                
                             </div>
                             <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
                                 <div class="">
@@ -454,7 +497,6 @@
                                         <span class="slider round"></span>
                                     </label>
                                 </div>
-                                
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tokens" role="tabpanel" aria-labelledby="tokens-tab">
@@ -474,7 +516,6 @@
                 <img src="./assets/images/logo.png" class="pb-3" width="70px" alt="">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur
-
                 </p>
             </div>
             <div class="col-6 col-sm-4">

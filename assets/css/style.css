@@ -159,8 +159,8 @@ tr:first-child { column-span: 10px;}
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 55px;
+    height: 27px;
 }
   
 .switch input { 
@@ -184,8 +184,8 @@ tr:first-child { column-span: 10px;}
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 18px;
+    width: 18px;
     left: 4px;
     bottom: 4px;
     background-color: white;
