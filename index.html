@@ -104,11 +104,11 @@
                     </li>
                 <!-- <h4 class="justify-content-start float-start">Exchange</h4> -->
                 </ul>
-                <div class="dropstart">
-                    <a href="#" class="justify-content-right pt-2" data-bs-toggle="dropdown" aria-expanded="false" style="color: #F9B933;"><i class="bi bi-gear"></i></a>
-                    <ul class="dropdown-menu">
-                        
-                    </ul>
+                <a href="#" class="justify-content-right pt-2" data-bs-toggle="dropdown" aria-expanded="false" style="color: #F9B933;"><i class="bi bi-gear"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    
+                </ul>
+                <div class="">
                 </div>
             </div>
             
@@ -123,9 +123,12 @@
                         <p>Trade tokens in an instant</p> -->
                         <div class="row g-2 ora-input">
                             <div class="col-9">
-                                <select class="form-select mb-2 ora-input" style="width: fit-content; border: 1px solid #2508b8;">
-                                    <option selected> BNB</option>
-                                </select>
+                                <div class="dropdown">
+                                    <button class="btn mb-3 dropdown-toggle ora-input" type="button"  data-bs-toggle="modal" data-bs-target="#tokenmodal">
+                                        BNB
+                                    </button>                                   
+                                </div>
+                                
                                 <input class="form-control ora-input" placeholder="0.00" type="text">
                             </div>
                             <div class="col-3">
@@ -133,7 +136,7 @@
                             </div>
                         </div>
 
-                        <div class="center">
+                        <div class="center pt-2">
                             <a href="#">
                                 <svg width="15" height="24" viewBox="0 0 30 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -146,9 +149,9 @@
 
                         <div class="row g-2 ora-input">
                             <div class="col-9">
-                                <select class="form-select ora-input mb-2" style="width: fit-content; border: 1px solid #2508b8;">
-                                    <option selected>USDT</option>
-                                </select>
+                                <button class="btn mb-3 dropdown-toggle ora-input" type="button"  data-bs-toggle="modal" data-bs-target="#tokenmodal">
+                                    BNB
+                                </button>  
                                 <input class="form-control ora-input" placeholder="0.0" type="text">
                             </div>
                             <div class="col-3">
@@ -163,23 +166,26 @@
                 <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="central-box p-4">
-                            <div class="modal-header" style="border: none;">                    
-                                <h5>Select a wallet</h5>
-                                <button type="button" class="btn-close text-white" style="color: white !important;" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="d-flex">
-                                <a href="#" class="ora-wallet">
-                                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px" alt="">
+                            <div class="modal-header" style="border: none;">      
+                                <div class="modal-content" style="background-color: inherit;">
+
+                                    <h5>Select a wallet</h5>
+                                    <button type="button" class="btn-close text-white" style="color: white !important;" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <div class="d-flex">
+                                        <a href="#" class="ora-wallet">
+                                            <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="#" class="ora-wallet">
+                                            <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px" alt="">
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a href="#" class="ora-wallet">
-                                    <div class="py-2 px-3">Meta Mask &nbsp;&nbsp; <img src="./assets/images/bnb.png" width="30px" alt="">
+                                    <div class="pt-4 center">
+                                        New to Ethereum? <a href="#">Learn more about wallets</a>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="pt-4 center">
-                                New to Ethereum? <a href="#">Learn more about wallets</a>
-                            </div>
+                                </div>
+                            </div>              
                         </div>
                     </div>
                 </div>
@@ -284,27 +290,200 @@
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="tokenmodal" tabindex="-1" aria-labelledby="tokenmodal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: inherit;">    
+                <div class="central-box p-3 w-100">
+                    <div class="d-flex">
+                        <h5>Select a token</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="">
+                        <input class="form-control py-3 my-3"
+                            style="border: 1px solid #2508b8; border-radius: 15px; background-color: rgb(3, 3, 31);"
+                            placeholder="Search name or paste address" type="text">
+                        <p>Common bases</p>
+    
+                        <div class="d-inline">
+                            <button class="btn mx-2 my-2 ora-input" type="button"> <img style="margin-right: 10px;"
+                                    src="./assets/images/bnb.png" width="20px" alt="">
+                                BNB
+                            </button>
+                            <button class="btn mx-2 my-2 ora-input" type="button"> <img style="margin-right: 10px;"
+                                    src="./assets/images/bnb.png" width="20px" alt="">
+                                SUSHI
+                            </button>
+                            <button class="btn mx-2 my-2 ora-input" type="button"> <img style="margin-right: 10px;"
+                                    src="./assets/images/bnb.png" width="20px" alt="">
+                                WETH
+                            </button>
+                            <button class="btn mx-2 my-2 ora-input" type="button"> <img style="margin-right: 10px;"
+                                    src="./assets/images/bnb.png" width="20px" alt="">
+                                BNB
+                            </button>
+                            <button class="btn mx-2 my-2 ora-input" type="button"> <img style="margin-right: 10px;"
+                                    src="./assets/images/bnb.png" width="20px" alt="">
+                                MIM
+                            </button>
+                            <button class="btn mx-2 my-2 ora-input" type="button"> <img style="margin-right: 10px;"
+                                    src="./assets/images/bnb.png" width="20px" alt="">
+                                ICE
+                            </button>
+                            <button class="btn mx-2 my-2 ora-input" type="button"> <img style="margin-right: 10px;"
+                                    src="./assets/images/bnb.png" width="20px" alt="">
+                                USDC
+                            </button>
+                            <button class="btn mx-2 my-2 ora-input" type="button"> <img style="margin-right: 10px;"
+                                    src="./assets/images/bnb.png" width="20px" alt="">
+                                USDT
+                            </button>
+                            <button class="btn mx-2 my-2 ora-input" type="button"> <img style="margin-right: 10px;"
+                                    src="./assets/images/bnb.png" width="20px" alt="">
+                                BNB
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        style="background-color: rgb(3, 3, 31); max-height: 300px; overflow-y: scroll; border-radius: 20px;">
+                        <ul class="list-group">
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a class="link" href=""><img
+                                        style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
+                                        alt="">SUSHI</a></li>
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                                        style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
+                                        alt="">SUSHI</a></li>
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                                        style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
+                                        alt="">SUSHI</a></li>
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                                        style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
+                                        alt="">SUSHI</a></li>
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                                        style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
+                                        alt="">SUSHI</a></li>
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                                        style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
+                                        alt="">SUSHI</a></li>
+                            <li class="list-group-item py-2" style="background-color: inherit;"><a href=""><img
+                                        style="margin-right: 10px;" src="./assets/images/bnb.png" width="40px"
+                                        alt="">SUSHI</a></li>
+                        </ul>
+                    </div>
+                    <div class="center py-2">
+                        <a class="link" type="button" data-bs-toggle="modal" data-bs-target="#managetokenmodal" href="#">Manage Token Lists</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="managetokenmodal" tabindex="-1" aria-labelledby="managetokenmodal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: inherit;">
+                <div class="central-box p-3">
+                    <div class="my-2">
+                        <a class="link" type="button" data-bs-toggle="modal" data-bs-target="#tokenmodal" href="#"><i class="bi bi-arrow-left"></i>&nbsp;Manage</a>
+                    </div>
+                    <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="lists-tab" data-bs-toggle="tab" data-bs-target="#lists" type="button"
+                                role="tab" aria-controls="lists" aria-selected="true">Lists</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tokens-tab" data-bs-toggle="tab" data-bs-target="#tokens" type="button"
+                                role="tab" aria-controls="tokens" aria-selected="false">Tokens</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="lists" role="tabpanel" aria-labelledby="lists-tab">
+                            <input class="form-control py-3 my-3"
+                            style="border: 1px solid #2508b8; border-radius: 15px; background-color: rgb(3, 3, 31);"
+                            placeholder="https:// or ipfs:// or ENS name" type="text">
+
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                                <div class="">
+                                    <img src="./assets/images/gemini.png" width="30px" alt=""> 
+                                    Gemini Token List v0.2.0
+                                    <label class="switch" style="right: 50px; position: absolute;">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                                <div class="">
+                                    <img src="./assets/images/gemini.png" width="30px" alt=""> 
+                                    Gemini Token List v0.2.0
+                                    <label class="switch" style="right: 50px; position: absolute;">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                                <div class="">
+                                    <img src="./assets/images/gemini.png" width="30px" alt=""> 
+                                    Gemini Token List v0.2.0
+                                    <label class="switch" style="right: 50px; position: absolute;">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                                <div class="">
+                                    <img src="./assets/images/gemini.png" width="30px" alt=""> 
+                                    Gemini Token List v0.2.0
+                                    <label class="switch" style="right: 50px; position: absolute;">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                                <div class="">
+                                    <img src="./assets/images/gemini.png" width="30px" alt=""> 
+                                    Gemini Token List v0.2.0
+                                    <label class="switch" style="right: 50px; position: absolute;">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tokens" role="tabpanel" aria-labelledby="tokens-tab">
+
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
-    <hr>
-
-    <div class="container-fluid footer" style="bottom: 10px; position: absolute;">
+    
+    <div class="container-fluid footer" style="bottom: 10px; margin-top: 100px; padding-top: 50px; background-color: #16122B; border-top: 0.5px solid whitesmoke; position: absolute;">
         <div class="row mx-4">
             <div class="col-6 col-sm-4 ">
                 <img src="./assets/images/logo.png" class="pb-3" width="70px" alt="">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
+                    Lorem ipsum dolor sit amet, consectetur
 
                 </p>
             </div>
             <div class="col-6 col-sm-4">
                 <h5>About Us</h5>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
+                Lorem ipsum dolor sit amet, consectetur
             </div>
             <div class="col-6 col-sm-4">
                 <h5>Projects</h5>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
+                Lorem ipsum dolor sit amet, consectetur
             </div>
         </div>
     </div>
