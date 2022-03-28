@@ -21,6 +21,17 @@ body {
     border-radius: 15px;
 }
 
+.ora-dd {
+    color: white;
+    text-decoration: none;
+}
+
+.ora-dd:hover, .ora-dd:focus {
+    background-color: #0C091F;
+    color: white;
+    width: 200px;
+}
+
 .ora-input {
     background-color: #0C091F;
     border: transparent;
@@ -97,7 +108,7 @@ body {
 }
 
 .ora-input {
-    border: 1px solid #F2994A;
+    border: 1px solid #0C091F;
     border-radius: 10px;
 }
 
@@ -148,13 +159,12 @@ tr {
     background-color: rgba(219, 214, 255, 0.1);
 }
 
-td { border-bottom: none; padding: 10px; }
-tr td:first-child { border-top-left-radius: 10px; }
+td { border-bottom: none; }
+tr td:first-child { border-top-left-radius: 10px; padding-left: 10px; padding-right: 20px; }
 tr td:last-child { border-top-right-radius: 10px; }
 tr td:first-child { border-bottom-left-radius: 10px; }
 tr td:last-child { border-bottom-right-radius: 10px; }
-
-tr:first-child { column-span: 10px;}
+tr td:first-child { column-span: 10px;}
 
 .switch {
     position: relative;

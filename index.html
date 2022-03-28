@@ -19,10 +19,10 @@
 <body>
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark ora-nav">
-        <div class="container-fluid mx-5 px-3">
+        <div class="container-fluid mx-5 px-5">
             <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" width="35px" alt=""></a>
             <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
-            <div class="d-none d-lg-block float-end" id="navbarTogglerDemo02">
+            <div class="d-none d-lg-block" id="navbarTogglerDemo02">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -33,9 +33,9 @@
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Action 2</a></li>
                         </ul>
-                    </li>
+                    </li>                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-5 px-5 ora-plain-btn" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle mx-3 px-3" href="#" id="navbarDropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             English
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
@@ -43,43 +43,69 @@
                             <li><a class="dropdown-item" href="#">Portuguese</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                        <button class="btn mb-3 dropdown-toggle ora-input w-100" type="button"  data-bs-toggle="dropdown" data-bs-target="#selectwalletmodal">
+                            <img width="30px" src="./assets/images/bnb.png" alt="">&nbsp;&nbsp; BSC
+                        </button> 
+                        <ul class="dropdown-menu p-3" style="min-width: 250px!important; background-color: #16122B; color: white;" aria-labelledby="navbarDropdown2">                            
+                            <li><h5>Select a wallet</h5></li>
+                            <li class="py-2"><a class=" ora-dd p-3 my-2" href="#"><img width="30px" src="./assets/images/bnb.png" alt="">&nbsp;&nbsp; BSC</a></li>
+                            <li class="py-2"><a class=" ora-dd p-3 my-2" href="#"><img width="30px" src="./assets/images/gemini.png" alt="">&nbsp;&nbsp;  Ethereum</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link ora-deco-btn text-dark px-4" href="#">Connect Wallet</a>
+                        <a class="nav-link ora-deco-btn text-dark mx-5 px-4" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Connect Wallet</a>
                     </li>
                 </ul>
             </div>
-            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #16122B;">
-                <div class="offcanvas-body mx-5">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown pb-4">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Explore
-                            </a>
-                            <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item pb-2 text-white" href="#">Action</a></li>
-                                <li><a class="dropdown-item pb-2 text-white" href="#">Action 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown pb-4">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                English
-                            </a>
-                            <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown2">
-                                <li><a class="dropdown-item pb-2 text-white" href="#">French</a></li>
-                                <li><a class="dropdown-item pb-2 text-white" href="#">Portuguese</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item" style="bottom: 30px; position: fixed;">
-                            <a class="nav-link ora-deco-btn text-dark px-4" href="#">Connect Wallet</a>
-                        </li>
-                    </ul>
-                  <!-- <h5 id="offcanvasRightLabel"></h5> -->
-                  <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
-                </div>
-                
-              </div>
         </div>
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #16122B;">
+            <div class="offcanvas-body mx-5">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown pb-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item pb-2 text-white" href="#">Action</a></li>
+                            <li><a class="dropdown-item pb-2 text-white" href="#">Action 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown pb-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            English
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item pb-2 text-white" href="#">French</a></li>
+                            <li><a class="dropdown-item pb-2 text-white" href="#">Portuguese</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown pb-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <img width="30px" src="./assets/images/bnb.png" alt="">&nbsp;&nbsp; BSC
+                        </a>
+                        <ul class="dropdown-menu p-3" style="min-width: 250px!important; background-color: #16122B; color: white;"
+                          aria-labelledby="navbarDropdown2">
+                          <li>
+                            <p>Select a wallet</p>
+                          </li>
+                          <li class="py-2"><a class=" ora-dd p-3 my-2" href="#"><img width="30px" src="./assets/images/bnb.png"
+                                alt="">&nbsp;&nbsp; BSC</a></li>
+                          <li class="py-2"><a class=" ora-dd p-3 my-2" href="#"><img width="30px" src="./assets/images/gemini.png"
+                                alt="">&nbsp;&nbsp; Ethereum</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item" style="bottom: 30px; position: fixed;">
+                        <a class="nav-link ora-deco-btn text-dark px-4" href="#" >Connect Wallet</a>
+                    </li>
+                </ul>
+              <!-- <h5 id="offcanvasRightLabel"></h5> -->
+              <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+            
+          </div>
     </nav>
 
     <!-- content -->
@@ -105,8 +131,8 @@
                 <!-- <h4 class="justify-content-start float-start">Exchange</h4> -->
                 </ul>
                 <a href="#" class="justify-content-right pt-2" data-bs-toggle="dropdown" aria-expanded="false" style="color: #F9B933;"><i class="bi bi-gear"></i></a>
-                <div class="dropdown-menu dropdown-menu-end" style="width: 270px; font-size: 12px; background-color: #16122B; color: whitesmoke; border: 1px solid whitesmoke; border-radius: 10px;">
-                    <div class="mx-2 my-1" style="border-radius: 10px; border: 1px solid lightgrey;">
+                <div class="dropdown-menu dropdown-menu-end" style="width: 270px; font-size: 12px; background-color: #16122B; color: whitesmoke; border: 1px solid #0C091F; border-radius: 10px;">
+                    <div class="mx-2 my-1" style="border-radius: 10px; border: 1px solid #0C091F;">
                         <div class="p-2" style="font-size: 10px;">Transaction Settings</div>                    
                         <div class="row g-3 mx-2">
                             <div class="col-9">
@@ -123,7 +149,7 @@
                             <input class="ora-input p-1 m-1 w-50" style="background-color: #0C091F;" type="text" placeholder="30"> minutes
                         </div>
                     </div>
-                    <div class="mx-2 my-1" style="border: 1px solid lightgrey; border-radius: 10px;">
+                    <div class="mx-2 my-1" style="border: 1px solid #0C091F; border-radius: 10px;">
                         <div class="p-2" style="font-size: 10px;">Interface Settings</div>  
                         <div class="d-block p-2">
                             <div class="">
@@ -243,9 +269,9 @@
                         <p>Open a Limit order</p> -->
                         <div class="row g-2 ora-input">
                             <div class="col-9">
-                                <select class="form-select ora-input" style="width: fit-content; border: 1px solid #2508b8;">
-                                    <option selected> BNB</option>
-                                </select>
+                                <button class="btn mb-3 dropdown-toggle ora-input" type="button"  data-bs-toggle="modal" data-bs-target="#tokenmodal">
+                                    BNB
+                                </button> 
                                 <input class="form-control ora-input" placeholder="0.0" type="text">
                             </div>
                             <div class="col-3">
@@ -288,9 +314,9 @@
 
                         <div class="row g-2 ora-input">
                             <div class="col-9">
-                                <select class="form-select ora-input" style="width: fit-content; border: 1px solid #2508b8;">
-                                    <option selected> BNB</option>
-                                </select>
+                                <button class="btn mb-3 dropdown-toggle ora-input" type="button"  data-bs-toggle="modal" data-bs-target="#tokenmodal">
+                                    BNB
+                                </button> 
                                 <input class="form-control ora-input" placeholder="0.0" type="text">
                             </div>
                             <div class="col-3">
@@ -424,7 +450,7 @@
 
     <div class="modal fade" id="managetokenmodal" tabindex="-1" aria-labelledby="managetokenmodal" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content" style="background-color: inherit;">
+            <div class="modal-content" style="background-color: inherit; border: none;">
                 <div class="central-box p-3">
                     <div class="my-2">
                         <a class="link" type="button" data-bs-toggle="modal" data-bs-target="#tokenmodal" href="#"><i class="bi bi-arrow-left"></i>&nbsp;Manage</a>
@@ -445,7 +471,7 @@
                             style="border: 1px solid #2508b8; border-radius: 15px; background-color: rgb(3, 3, 31);"
                             placeholder="https:// or ipfs:// or ENS name" type="text">
 
-                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid #0C091F;">
                                 <div class="">
                                     <img src="./assets/images/gemini.png" width="30px" alt=""> 
                                     Gemini Token List v0.2.0
@@ -455,7 +481,7 @@
                                     </label>
                                 </div>                                
                             </div>
-                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid #0C091F;">
                                 <div class="">
                                     <img src="./assets/images/gemini.png" width="30px" alt=""> 
                                     Gemini Token List v0.2.0
@@ -466,7 +492,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid #0C091F;">
                                 <div class="">
                                     <img src="./assets/images/gemini.png" width="30px" alt=""> 
                                     Gemini Token List v0.2.0
@@ -477,7 +503,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid #0C091F;">
                                 <div class="">
                                     <img src="./assets/images/gemini.png" width="30px" alt=""> 
                                     Gemini Token List v0.2.0
@@ -488,7 +514,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid lightgray;">
+                            <div class="d-block p-3 my-1" style="border-radius: 5px; border: 1px solid #0C091F;">
                                 <div class="">
                                     <img src="./assets/images/gemini.png" width="30px" alt=""> 
                                     Gemini Token List v0.2.0
@@ -510,7 +536,7 @@
 
     <!-- footer -->
     
-    <div class="container-fluid footer" style="bottom: 10px; margin-top: 100px; padding-top: 50px; background-color: #16122B; border-top: 0.5px solid whitesmoke; position: absolute;">
+    <div class="container-fluid footer" style="bottom: 10px; margin-top: 100px; padding-top: 50px; background-color: #16122B; position: absolute;">
         <div class="row mx-4">
             <div class="col-6 col-sm-4 ">
                 <img src="./assets/images/logo.png" class="pb-3" width="70px" alt="">

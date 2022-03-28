@@ -18,78 +18,124 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark ora-nav">
-    <div class="container-fluid mx-5 px-3">
-        <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" width="70px" alt=""></a>
-        <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
-        <div class="d-none d-lg-block float-end" id="navbarTogglerDemo02">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Explore
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Action 2</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mx-5 px-5 ora-plain-btn" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        English
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <li><a class="dropdown-item" href="#">French</a></li>
-                        <li><a class="dropdown-item" href="#">Portuguese</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link ora-deco-btn text-dark px-4" href="#">Connect Wallet</a>
-                </li>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark ora-nav">
+    <div class="container-fluid mx-5 px-5">
+      <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" width="35px" alt=""></a>
+      <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+      <div class="d-none d-lg-block" id="navbarTogglerDemo02">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Explore
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action 2</a></li>
             </ul>
-        </div>
-        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #16122B;">
-            <div class="offcanvas-body mx-5">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown pb-4">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Explore
-                        </a>
-                        <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item pb-2 text-white" href="#">Action</a></li>
-                            <li><a class="dropdown-item pb-2 text-white" href="#">Action 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown pb-4">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            English
-                        </a>
-                        <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown2">
-                            <li><a class="dropdown-item pb-2 text-white" href="#">French</a></li>
-                            <li><a class="dropdown-item pb-2 text-white" href="#">Portuguese</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" style="bottom: 30px; position: fixed;">
-                        <a class="nav-link ora-deco-btn text-dark px-4" href="#">Connect Wallet</a>
-                    </li>
-                </ul>
-              <!-- <h5 id="offcanvasRightLabel"></h5> -->
-              <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
-            </div>
-            
-          </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-2 px-2" href="#" id="navbarDropdown2" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              English
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="#">French</a></li>
+              <li><a class="dropdown-item" href="#">Portuguese</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mx-2 px-2" href="#" id="navbarDropdown2" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img width="30px" src="./assets/images/bnb.png" alt="">&nbsp;&nbsp; BSC
+            </a>
+            <ul class="dropdown-menu p-3" style="min-width: 250px!important; background-color: #16122B; color: white;"
+              aria-labelledby="navbarDropdown2">
+              <li>
+                <h5>Select a wallet</h5>
+              </li>
+              <li class="py-2"><a class=" ora-dd p-3 my-2" href="#"><img width="30px" src="./assets/images/bnb.png"
+                    alt="">&nbsp;&nbsp; BSC</a></li>
+              <li class="py-2"><a class=" ora-dd p-3 my-2" href="#"><img width="30px" src="./assets/images/gemini.png"
+                    alt="">&nbsp;&nbsp; Ethereum</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ora-deco-btn text-dark mx-5 px-4" href="#" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Connect Wallet</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel" style="background-color: #16122B;">
+      <div class="offcanvas-body mx-5">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown pb-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Explore
+            </a>
+            <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item pb-2 text-white" href="#">Action</a></li>
+              <li><a class="dropdown-item pb-2 text-white" href="#">Action 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown pb-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              English
+            </a>
+            <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item pb-2 text-white" href="#">French</a></li>
+              <li><a class="dropdown-item pb-2 text-white" href="#">Portuguese</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown pb-4">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img width="30px" src="./assets/images/bnb.png" alt="">&nbsp;&nbsp; BSC
+            </a>
+            <ul class="dropdown-menu p-3" style="min-width: 250px!important; background-color: #16122B; color: white;"
+              aria-labelledby="navbarDropdown2">
+              <li>
+                <p>Select a wallet</p>
+              </li>
+              <li class="py-2"><a class=" ora-dd p-3 my-2" href="#"><img width="30px" src="./assets/images/bnb.png"
+                    alt="">&nbsp;&nbsp; BSC</a></li>
+              <li class="py-2"><a class=" ora-dd p-3 my-2" href="#"><img width="30px" src="./assets/images/gemini.png"
+                    alt="">&nbsp;&nbsp; Ethereum</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" style="bottom: 30px; position: fixed;">
+            <a class="nav-link ora-deco-btn text-dark px-4" href="#">Connect Wallet</a>
+          </li>
+        </ul>
+        <!-- <h5 id="offcanvasRightLabel"></h5> -->
+        <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      </div>
+
+    </div>
+  </nav>
 
   <!-- content -->
-  <section>
+  <section style="margin-top: 100px;">
     <div class="container-fluid">
-      <div class="row m-5">
+      <div class="row m-3">
         <div class="col-md-6">
           <div class="" style="background: rgba(99, 87, 45, 0.5); border-radius: 20px;">
-            <div>$13,888 <br><span>Last 24 hours</span></div>
-            <div class="">Binance<br> <span>TVL</span></div>
+            <div class="d-flex bd-highlight mb-3" style="color: #F2C94C">
+              <div class="me-auto p-2 bd-highlight">
+                <div style="font-size: 25px; font-weight: bold;">$13,888</div>
+                <div>Last 24 hours</div>
+              </div>
+              <!-- <div class="p-2 bd-highlight">Flex</div> -->
+              <div class="p-2 bd-highlight">
+                <div> Binance</div>
+                <div style="font-size: 25px; font-weight: bold;">TVL</div>
+              </div>
+            </div>
             <div class="center" style="margin: 30px;">
               <svg width="100%" height="232" viewBox="0 0 566 232" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -104,13 +150,21 @@
               <button class="text-sm px-3 py-0.5">ALL</button>
             </div>
           </div>
-          <!-- <canvas id="myChart" class="px-5" style="width: 50%;"></canvas> -->
         </div>
 
         <div class="col-md-6">
           <div class="" style="background-color: #16122B; border-radius: 20px;">
-            <div>$13,888 <br><span>Last 24 hours</span></div>
-            <div class="">Binance<br> <span>TVL</span></div>
+            <div class="d-flex bd-highlight mb-3" style="color: #8976FF;">
+              <div class="me-auto p-2 bd-highlight">
+                <div style="font-size: 25px; font-weight: bold;">$13,888</div>
+                <div>Last 24 hours</div>
+              </div>
+              <!-- <div class="p-2 bd-highlight">Flex</div> -->
+              <div class="p-2 bd-highlight">
+                <div> Binance</div>
+                <div style="font-size: 25px; font-weight: bold;">TVL</div>
+              </div>
+            </div>
             <div class="center" style="margin: 30px;">
               <svg width="100%" height="232" viewBox="0 0 566 232" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -125,17 +179,16 @@
               <button class="text-sm px-3 py-0.5">ALL</button>
             </div>
           </div>
-          <!-- <canvas id="myChart2" class="px-5" style="width: 50%;"></canvas> -->
         </div>
       </div>
     </div>
 
     <div class="container-fluid">
-      <div class="center m-5">
-        <table class="table text-white" style="border: none; border-bottom-width: 0px !important;">
-          <thead style="margin-bottom: 30px;">
+      <div class="center m-5 table-responsive">
+        <table class="table text-white align-middle" style="border: none; border-bottom-width: 0px !important;">
+          <thead>
             <tr style="background-color: unset;">
-              <th colspan="2" class="th" scope="col">Name</th>
+              <th class="th" scope="col">Name</th>
               <!-- <th class="th" scope="col">Name</th> -->
               <th class="th" scope="col">Price</th>
               <th class="th" scope="col">Liquidity</th>
@@ -146,10 +199,10 @@
           </thead>
           <tbody class="" style="border: none;">
             <tr style="height: 20px;"></tr>
-            <tr class="my-3 py-3" style="background-color: rgba(219, 214, 255, 0.1); box-sizing: border-box;">
-              <td colspan="2"><img src="./assets/images/bnb.png" height="35px" alt=""><span style="padding-left: 10px;">
+            <tr class="my-3 py-3">
+              <td><img src="./assets/images/bnb.png" height="30px" alt=""><span style="padding-left: 10px;">
                   BNB</span></td>
-              <td style="padding-top: 15px;">$369</td>
+              <td>$369</td>
               <td>$1,000,000</td>
               <td><span>+5.20%</span> <br> <span>-4.20%</span></td>
               <td> <span>+2.27,743,920%</span> <br> <span>-4.273,628,490%</span> </td>
@@ -161,10 +214,10 @@
               </td>
 
             </tr>
-            <tr class="my-3 py-3" style="background-color: rgba(219, 214, 255, 0.1); box-sizing: border-box;">
-              <td colspan="2"><img src="./assets/images/bnb.png" height="35px" alt=""><span style="padding-left: 10px;">
+            <tr class="my-3 py-3">
+              <td><img src="./assets/images/bnb.png" height="30px" alt=""><span style="padding-left: 10px;">
                   BNB</span></td>
-              <td style="padding-top: 15px;">$369</td>
+              <td>$369</td>
               <td>$1,000,000</td>
               <td><span>+5.20%</span> <br> <span>-4.20%</span></td>
               <td> <span>+2.27,743,920%</span> <br> <span>-4.273,628,490%</span> </td>
@@ -176,10 +229,10 @@
               </td>
 
             </tr>
-            <tr class="my-3 py-3" style="background-color: rgba(219, 214, 255, 0.1); box-sizing: border-box;">
-              <td colspan="2"><img src="./assets/images/bnb.png" height="35px" alt=""><span style="padding-left: 10px;">
+            <tr class="my-3 py-3">
+              <td><img src="./assets/images/bnb.png" width="30px" alt=""><span style="padding-left: 10px;">
                   BNB</span></td>
-              <td style="padding-top: 15px;">$369</td>
+              <td>$369</td>
               <td>$1,000,000</td>
               <td><span>+5.20%</span> <br> <span>-4.20%</span></td>
               <td> <span>+2.27,743,920%</span> <br> <span>-4.273,628,490%</span> </td>
@@ -190,10 +243,10 @@
                 </svg>
               </td>
             </tr>
-            <tr class="my-3 py-3" style="background-color: rgba(219, 214, 255, 0.1); box-sizing: border-box;">
-              <td colspan="2"><img src="./assets/images/bnb.png" height="35px" alt=""><span style="padding-left: 10px;">
+            <tr class="my-3 py-3">
+              <td><img src="./assets/images/bnb.png" height="30px" alt=""><span style="padding-left: 10px;">
                   BNB</span></td>
-              <td style="padding-top: 15px;">$369</td>
+              <td>$369</td>
               <td>$1,000,000</td>
               <td><span>+5.20%</span> <br> <span>-4.20%</span></td>
               <td> <span>+2.27,743,920%</span> <br> <span>-4.273,628,490%</span> </td>
@@ -204,10 +257,10 @@
                 </svg>
               </td>
             </tr>
-            <tr class="my-3 py-3" style="background-color: rgba(219, 214, 255, 0.1); box-sizing: border-box;">
-              <td colspan="2"><img src="./assets/images/bnb.png" height="35px" alt=""><span style="padding-left: 10px;">
+            <tr class="my-3 py-3">
+              <td><img src="./assets/images/bnb.png" height="30px" alt=""><span style="padding-left: 10px;">
                   BNB</span></td>
-              <td style="padding-top: 15px;">$369</td>
+              <td>$369</td>
               <td>$1,000,000</td>
               <td><span>+5.20%</span> <br> <span>-4.20%</span></td>
               <td> <span>+2.27,743,920%</span> <br> <span>-4.273,628,490%</span> </td>
@@ -229,24 +282,24 @@
     <hr>
 
     <div class="container-fluid footer">
-        <div class="row">
-            <div class="col-6 col-sm-4 ">
-                <img src="./assets/images/logo.png" class="pb-3" width="70px" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
+      <div class="row">
+        <div class="col-6 col-sm-4 ">
+          <img src="./assets/images/logo.png" class="pb-3" width="70px" alt="">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
 
-                </p>
-            </div>
-            <div class="col-6 col-sm-4">
-                <h5>About Us</h5>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
-            </div>
-            <div class="col-6 col-sm-4">
-                <h5>Projects</h5>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
-            </div>
+          </p>
         </div>
+        <div class="col-6 col-sm-4">
+          <h5>About Us</h5>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
+        </div>
+        <div class="col-6 col-sm-4">
+          <h5>Projects</h5>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
+        </div>
+      </div>
     </div>
   </div>
 
