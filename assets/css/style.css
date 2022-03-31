@@ -28,7 +28,7 @@ body {
 
 .ora-dd:hover, .ora-dd:focus {
     background-color: #0C091F;
-    color: white;
+    color: #F2C94C;
     width: 200px;
 }
 
@@ -87,6 +87,21 @@ body {
 .link:hover {
     text-decoration: none;
     color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #F2C94C;
 }
 
 .nav-link:hover, .nav-item > .active {
