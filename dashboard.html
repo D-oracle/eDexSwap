@@ -18,9 +18,9 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark ora-nav">
-    <div class="container-fluid mx-5 px-5">
-      <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" width="35px" alt=""></a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark ora-nav" style="padding-bottom: 0px;">
+    <div class="container-fluid mx-5 px-3">
+      <a class="" href="./landing-page.html"><img src="./assets/images/logo.png" width="50px" alt=""></a>
       <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
         aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
       <div class="d-none d-lg-block" id="navbarTogglerDemo02">
@@ -30,26 +30,27 @@
               aria-expanded="false">
               Explore
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Action 2</a></li>
+            <ul class="dropdown-menu" style="background-color: #16122B; color: white;" aria-labelledby="navbarDropdown">
+              <li class="p-2"><a class="ora-dd" href="./dashboard.html">Dashboard</a></li>
+              <li class="p-2"><a class="ora-dd" href="#">Action 2</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mx-2 px-2" href="#" id="navbarDropdown2" role="button"
+            <a class="nav-link dropdown-toggle mx-3 px-3" href="#" id="navbarDropdown2" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               English
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-              <li><a class="dropdown-item" href="#">French</a></li>
-              <li><a class="dropdown-item" href="#">Portuguese</a></li>
+            <ul class="dropdown-menu" style="background-color: #16122B; color: white;"
+              aria-labelledby="navbarDropdown2">
+              <li class="p-2"><a class="ora-dd" href="#">French</a></li>
+              <li class="p-2"><a class="ora-dd" href="#">Portuguese</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mx-2 px-2" href="#" id="navbarDropdown2" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn mb-3 dropdown-toggle ora-input w-100" type="button" data-bs-toggle="dropdown"
+              data-bs-target="#selectwalletmodal">
               <img width="30px" src="./assets/images/bnb.png" alt="">&nbsp;&nbsp; BSC
-            </a>
+            </button>
             <ul class="dropdown-menu p-3" style="min-width: 250px!important; background-color: #16122B; color: white;"
               aria-labelledby="navbarDropdown2">
               <li>
@@ -78,8 +79,8 @@
               Explore
             </a>
             <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item pb-2 text-white" href="#">Action</a></li>
-              <li><a class="dropdown-item pb-2 text-white" href="#">Action 2</a></li>
+              <li><a class="ora-dd pb-2 text-white" href="./dashboard.html">Dashboard</a></li>
+              <!-- <li><a class="ora-dd pb-2 text-white" href="#">Action 2</a></li> -->
             </ul>
           </li>
           <li class="nav-item dropdown pb-4">
@@ -88,13 +89,13 @@
               English
             </a>
             <ul class="dropdown-menu" style="background-color: inherit;" aria-labelledby="navbarDropdown2">
-              <li><a class="dropdown-item pb-2 text-white" href="#">French</a></li>
-              <li><a class="dropdown-item pb-2 text-white" href="#">Portuguese</a></li>
+              <li><a class="ora-dd pb-2 text-white" href="#">French</a></li>
+              <li><a class="ora-dd pb-2 text-white" href="#">Portuguese</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown pb-4">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               <img width="30px" src="./assets/images/bnb.png" alt="">&nbsp;&nbsp; BSC
             </a>
             <ul class="dropdown-menu p-3" style="min-width: 250px!important; background-color: #16122B; color: white;"
@@ -109,7 +110,8 @@
             </ul>
           </li>
           <li class="nav-item" style="bottom: 30px; position: fixed;">
-            <a class="nav-link ora-deco-btn text-dark px-4" href="#">Connect Wallet</a>
+            <a class="nav-link ora-deco-btn text-dark px-4" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              href="#">Connect Wallet</a>
           </li>
         </ul>
         <!-- <h5 id="offcanvasRightLabel"></h5> -->
@@ -278,27 +280,29 @@
   </section>
 
   <!-- footer -->
-  <div class="whitespace">
-    <hr>
-
-    <div class="container-fluid footer">
-      <div class="row">
-        <div class="col-6 col-sm-4 ">
-          <img src="./assets/images/logo.png" class="pb-3" width="70px" alt="">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
-
-          </p>
-        </div>
-        <div class="col-6 col-sm-4">
-          <h5>About Us</h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
-        </div>
-        <div class="col-6 col-sm-4">
-          <h5>Projects</h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Ac amet, venenatis, in quis at.
-        </div>
+  <div class="container-fluid footer"
+    style="bottom: 0px; margin-top: 160px; padding-top: 50px; background-color: #16122B;">
+    <div class="row mx-4">
+      <div class="col-12 col-sm-4 py-2">
+        <img src="./assets/images/logo.png" class="pb-3" width="70px" alt="">
+        <p>
+          edeXSwap is a decentralized exchange (or DEX, for short).
+        </p>
+      </div>
+      <div class="col-6 col-sm-4 py-2">
+        <h5>Developers</h5>
+        <ul>
+          <li><a class="footer-link" href="#">Documentation</a></li>
+          <li><a class="footer-link" href="#">Github</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-sm-4 py-2">
+        <h5>Community</h5>
+        <ul>
+          <li><a class="footer-link" href="#">Discord</a></li>
+          <li><a class="footer-link" href="#">Telegram</a></li>
+          <li><a class="footer-link" href="#">Twitter</a></li>
+        </ul>
       </div>
     </div>
   </div>

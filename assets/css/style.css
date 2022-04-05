@@ -63,6 +63,25 @@ body {
     font-size: 15px;
 }
 
+@media (max-width: 575.98px) {
+    .central-box {
+        margin-top: 100px;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        background-color: #16122B;
+        width: 320px;
+        color: white;
+        border-radius: 10px;
+        height: fit-content;
+        margin-bottom: 50px;
+        font-size: 10px;
+    }
+}
+
+.dollar-coin {color:black; background: linear-gradient(90deg, #F2C94C 0%, #F2994A 100%); border-radius: 50%; padding: 8px; font-size: 25px;}
+
 .central-box-header {
     text-decoration: none;
     margin-left: auto;
